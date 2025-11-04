@@ -13,6 +13,7 @@ import { FormComponent } from './shared/component/form/form.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditcardComponent } from './shared/component/editcard/editcard.component';
 import { ConfirmComponent } from './shared/component/confirm/confirm.component';
+import { MatformComponent } from './shared/component/matform/matform.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ConfirmComponent } from './shared/component/confirm/confirm.component';
     CardComponent,
     FormComponent,
     EditcardComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    MatformComponent
   ],
   imports: [
     BrowserModule,

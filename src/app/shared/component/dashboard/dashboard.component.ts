@@ -9,12 +9,12 @@ import { map, Observable } from 'rxjs';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
- courseArr ! : Array<Icours>
+//  courseArr ! : Array<Icours>
  
 //  allcourses$ !: Observable<Array<Icours>>
 
- Begenerscourses ! : Icours[]
- Advancedcourses ! : Icours[];
+//  Begenerscourses ! : Icours[]
+//  Advancedcourses ! : Icours[];
 
  allcorses$ !:  Observable<Array<Icours>>
  Advancedcourse$ !:  Observable<Array<Icours>>
@@ -29,6 +29,7 @@ export class DashboardComponent implements OnInit {
  .pipe(
   map(res=>{
    return res.filter(c=> c.category === 'Beginers')
+   
    
   })
  )

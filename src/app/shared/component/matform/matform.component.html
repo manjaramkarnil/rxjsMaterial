@@ -1,0 +1,56 @@
+
+
+
+  <form [formGroup]="courseform" (ngsubmint)="Onform()">
+
+      <mat-form-field appearance="legacy" class="w-100">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="title">
+    <mat-error>
+        Title  reuired 
+    </mat-error>
+ 
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <mat-label>Select</mat-label>
+    <mat-select formControlName="category">
+        <mat-option value="Begginers">Beginners </mat-option>
+        <mat-option value="Advanced"> Advanced</mat-option>
+    </mat-select>
+    <mat-error>
+        category selecet
+    </mat-error>
+</mat-form-field>
+
+  <mat-form-field appearance="legacy" class="w-100">
+    <mat-label>Img</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="image">
+    <mat-error>
+        ..Img Url  is requred 
+    </mat-error>
+
+   
+   
+  </mat-form-field>
+
+    <mat-form-field appearance="legacy" class="w-100">
+    <mat-label>dureation</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="duration">
+    <mat-error *ngIf="f['duration'].hasError('requred')">
+        duration is requred filed..
+    </mat-error>
+  
+  </mat-form-field>
+
+
+  <div class="mt-2">
+      <button mat-raised-button color="warn"  type="button"   class="mr-2">Close</button>
+    <button mat-raised-button color="primary" type="submit" >Save</button>
+  </div>
+
+
+
+   
+
+  </form>

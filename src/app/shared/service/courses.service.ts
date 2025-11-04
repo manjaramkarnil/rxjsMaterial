@@ -35,6 +35,12 @@ export class CoursesService {
 
   }
 
+  UpdateCourese(obj : Icours):Observable<Icours>{
+    let updateUrl = `${environment.basuUrl}/courses/${obj.id}.json`
+    return this._http.patch<Icours>(updateUrl,obj)
+  }
+
+
   removCourse(id :number):Observable<Icours>{
     let removeUrl  = `${environment.basuUrl}/courses ${id}.json`;
     return this._http.delete<Icours>(removeUrl)

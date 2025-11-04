@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-    basuUrl  : `https://angularpost-3fb73-default-rtdb.firebaseio.com/`
+    basuUrl  : `https://angularpost-3fb73-default-rtdb.firebaseio.com`
 };
 
 /*
